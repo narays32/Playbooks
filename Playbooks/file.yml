@@ -1,0 +1,10 @@
+---
+- name: This playbook is to create file
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Creating a file
+    file: 
+     path: /tmp/s1
+     state: touch

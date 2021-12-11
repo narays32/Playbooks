@@ -1,0 +1,10 @@
+---
+- name: Install multiple packages
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: Install multiple packages
+    yum :
+     name : ['git', 'which', 'tree', 'docker', 'wget']
+     state: present

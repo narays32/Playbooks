@@ -1,0 +1,10 @@
+---
+- name: create
+  hosts: all
+  become: yes
+
+  tasks:
+  - name: copy
+    copy:
+     src: /home/ansadmin/ans.xml
+     dest: /home/ansadmin  
